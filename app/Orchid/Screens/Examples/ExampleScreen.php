@@ -15,6 +15,9 @@ use Orchid\Screen\Screen;
 use Orchid\Screen\TD;
 use Orchid\Support\Facades\Layout;
 use Orchid\Support\Facades\Toast;
+use RandomPassword\Password;
+
+
 
 class ExampleScreen extends Screen
 {
@@ -80,7 +83,10 @@ class ExampleScreen extends Screen
      */
     public function name(): ?string
     {
-        return 'Example screen';
+        $password= new Password(10);
+        $randomText = $password->generate();
+        // echo
+        return $randomText;
     }
 
     /**
@@ -111,6 +117,8 @@ class ExampleScreen extends Screen
                 ->modal('exampleModal')
                 ->method('showToast')
                 ->icon('full-screen'),
+
+
 
             Button::make('Export file')
                 ->method('export')

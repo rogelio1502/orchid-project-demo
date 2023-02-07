@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "ae61c16486556e6fa18c6de8f75f9758",
+    "content-hash": "6e0908a9893fc12d82c0be41bd722a5e",
     "packages": [
         {
             "name": "brick/math",
@@ -3303,6 +3303,54 @@
                 }
             ],
             "time": "2023-01-12T18:13:24+00:00"
+        },
+        {
+            "name": "rogelio1502/ef-package",
+            "version": "dev-main",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/rogelio1502/ef-package.git",
+                "reference": "2aee85f141ac2866d1c8a5dfd82d0249c50b5304"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/rogelio1502/ef-package/zipball/2aee85f141ac2866d1c8a5dfd82d0249c50b5304",
+                "reference": "2aee85f141ac2866d1c8a5dfd82d0249c50b5304",
+                "shasum": ""
+            },
+            "require": {
+                "php": ">=5.5.0"
+            },
+            "default-branch": true,
+            "type": "library",
+            "extra": {
+                "laravel": {
+                    "providers": [
+                        "RandomPassword\\PasswordServiceProvider"
+                    ]
+                }
+            },
+            "autoload": {
+                "psr-4": {
+                    "RandomPassword\\": "src/RandomPassword/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "proprietary"
+            ],
+            "authors": [
+                {
+                    "name": "Rogelio Torres Pasillas",
+                    "email": "rogelio1502@gmail.com"
+                }
+            ],
+            "description": "Lorem",
+            "support": {
+                "issues": "https://github.com/rogelio1502/ef-package/issues",
+                "source": "https://github.com/rogelio1502/ef-package/tree/main"
+            },
+            "time": "2023-02-07T19:48:03+00:00"
         },
         {
             "name": "symfony/console",
@@ -8434,8 +8482,10 @@
         }
     ],
     "aliases": [],
-    "minimum-stability": "stable",
-    "stability-flags": [],
+    "minimum-stability": "dev",
+    "stability-flags": {
+        "rogelio1502/ef-package": 20
+    },
     "prefer-stable": true,
     "prefer-lowest": false,
     "platform": {
