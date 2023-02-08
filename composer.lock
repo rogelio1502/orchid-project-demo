@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "6e0908a9893fc12d82c0be41bd722a5e",
+    "content-hash": "f49690cdc817dea1341f158fc4cb8ed5",
     "packages": [
         {
             "name": "brick/math",
@@ -3306,33 +3306,34 @@
         },
         {
             "name": "rogelio1502/ef-package",
-            "version": "dev-main",
+            "version": "0.0.50",
             "source": {
                 "type": "git",
                 "url": "https://github.com/rogelio1502/ef-package.git",
-                "reference": "2aee85f141ac2866d1c8a5dfd82d0249c50b5304"
+                "reference": "b20c3040e11bced5adcf664fd311d69f51c5c7e8"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/rogelio1502/ef-package/zipball/2aee85f141ac2866d1c8a5dfd82d0249c50b5304",
-                "reference": "2aee85f141ac2866d1c8a5dfd82d0249c50b5304",
+                "url": "https://api.github.com/repos/rogelio1502/ef-package/zipball/b20c3040e11bced5adcf664fd311d69f51c5c7e8",
+                "reference": "b20c3040e11bced5adcf664fd311d69f51c5c7e8",
                 "shasum": ""
             },
             "require": {
+                "orchid/platform": "^13.9",
                 "php": ">=5.5.0"
             },
-            "default-branch": true,
             "type": "library",
             "extra": {
                 "laravel": {
                     "providers": [
-                        "RandomPassword\\PasswordServiceProvider"
+                        "EF\\Providers\\EfServiceProvider"
                     ]
                 }
             },
             "autoload": {
                 "psr-4": {
-                    "RandomPassword\\": "src/RandomPassword/"
+                    "EF\\Providers\\": "src/EF/Providers/",
+                    "EF\\Components\\": "src/EF/Components/"
                 }
             },
             "notification-url": "https://packagist.org/downloads/",
@@ -3342,15 +3343,15 @@
             "authors": [
                 {
                     "name": "Rogelio Torres Pasillas",
-                    "email": "rogelio1502@gmail.com"
+                    "email": "rogelio15021515@gmail.com"
                 }
             ],
-            "description": "Lorem",
+            "description": "EF Package Demo",
             "support": {
                 "issues": "https://github.com/rogelio1502/ef-package/issues",
-                "source": "https://github.com/rogelio1502/ef-package/tree/main"
+                "source": "https://github.com/rogelio1502/ef-package/tree/0.0.50"
             },
-            "time": "2023-02-07T19:48:03+00:00"
+            "time": "2023-02-08T00:37:50+00:00"
         },
         {
             "name": "symfony/console",
@@ -8483,9 +8484,7 @@
     ],
     "aliases": [],
     "minimum-stability": "dev",
-    "stability-flags": {
-        "rogelio1502/ef-package": 20
-    },
+    "stability-flags": [],
     "prefer-stable": true,
     "prefer-lowest": false,
     "platform": {

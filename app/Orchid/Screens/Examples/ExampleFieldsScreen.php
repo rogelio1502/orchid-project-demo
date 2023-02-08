@@ -16,6 +16,7 @@ use Orchid\Screen\Screen;
 use Orchid\Support\Color;
 use Orchid\Support\Facades\Alert;
 use Orchid\Support\Facades\Layout;
+use EF\Components\LiveSelect;
 
 class ExampleFieldsScreen extends Screen
 {
@@ -113,6 +114,7 @@ class ExampleFieldsScreen extends Screen
                         ->title('Example textarea')
                         ->rows(6),
 
+
                 ])->title('Base Controls'),
                 Layout::rows([
                     Input::make('disabled_input')
@@ -159,6 +161,11 @@ class ExampleFieldsScreen extends Screen
                         ->placeholder('Readonlyd textarea')
                         ->rows(7)
                         ->disabled(),
+                    LiveSelect::make('.robot')
+                        ->title('Vercel API')
+                        ->placeholder("Choose one...")
+                        ->remoteUrl('https://node-api-vercel-pi.vercel.app?q=')
+                        ->minToSearch(3),
 
                 ])->title('Input States'),
             ]),
